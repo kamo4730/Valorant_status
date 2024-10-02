@@ -5,3 +5,4 @@ https://colinch4.github.io/2023-12-15/09-06-27-685036-json-%EB%8D%B0%EC%9D%B4%ED
 naaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhhhn
 no way
 https://www.youtube.com/watch?v=jkzq9j5yeT8&list=PL3vL1pnMCbUERqllcwhcvEJbKum-M9zT5
+https://jupyter.org/try-jupyter/lab/
