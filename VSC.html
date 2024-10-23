@@ -3,10 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>VID</title>
+        <script>
+            let api_key = "RGAPI-c393e526-245f-40a1-bfb7-37638b43d45f"
+            var season_id = document.getElementById("optionList")
+            async function getLeaderboards(seasonId) {
+                const response = await fetch(`https://kr.api.riotgames.com/val/ranked/v1/leaderboards/by-act/${seasonId}?size=100&startIndex=0&api_key=${api_Key}`);
+                const leaderboardData = await response.json();
+                console.log(leaderboardData)
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>    
     <body>
-        <select id="optionList" onchange="getLeaderboard()">
+        <select id="optionList" onchange="getLeaderboards()">
             <option value="97b6e739-44cc-ffa7-49ad-398ba502ceb0">EP1_ACT1</option>
             <option value="ab57ef51-4e59-da91-cc8d-51a5a2b9b8ff">EP1_ACT2</option>
             <option value="52e9749a-429b-7060-99fe-4595426a0cf7">EP1_ACT3</option>
